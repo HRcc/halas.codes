@@ -16,7 +16,9 @@ const authToken = process.env.NETLIFY_ACCESS_TOKEN;
     res = await axios.post(`https://api.netlify.com/api/v1/sites/${siteName}/deploys/${latestDeployId}/restore`, {}, options)
 
     console.log(res.statusText)
+    process.exit(0)
   } catch (err) {
     console.error('Unable to publish the release: ' + err.message)
+    process.exit(1)
   }
 })()
