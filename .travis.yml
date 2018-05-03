@@ -11,9 +11,6 @@ env:
 script:
   - npm test -- --coverage
 
-before_deploy:
-  - npm run build
-
 deploy:
   provider: script
   script: node ./publish.js
