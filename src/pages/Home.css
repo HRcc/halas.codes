@@ -1,0 +1,9 @@
+.Page--landing {
+  background: url(../assets/images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.Page--landing section {
+  margin-left: 10%;
+}

@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders navbar with links and icons 1`] = `
+<nav
+  className="h-16 px-4 flex justify-between items-center"
+>
+  <img
+    alt="logo"
+    className="h-12"
+    src="logo.svg"
+  />
+  <ul
+    className="list-reset flex"
+  >
+    <li
+      key="Github"
+    >
+      <a
+        className="px-4 text-xs flex items-center font-hairline no-underline uppercase text-grey-light hover:text-white"
+        href="github.url"
+        target="_blank"
+      >
+        <i
+          className="fab fa-github text-base mr-2 text-shadow2"
+        />
+        Github
+      </a>
+    </li>
+    <li
+      key="LinkedIn"
+    >
+      <a
+        className="px-4 text-xs flex items-center font-hairline no-underline uppercase text-grey-light hover:text-white"
+        href="linkedin.url"
+        target="_blank"
+      >
+        <i
+          className="fab fa-linkedin text-base mr-2 text-shadow2"
+        />
+        LinkedIn
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`renders navbar without links 1`] = `
+<nav
+  className="h-16 px-4 flex justify-between items-center"
+>
+  <img
+    alt="logo"
+    className="h-12"
+    src="logo.svg"
+  />
+</nav>
+`;
